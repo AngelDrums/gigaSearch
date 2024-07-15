@@ -1,0 +1,55 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+}
+
+.titleSearch{
+    /* border: 1px solid black; */
+    background-color: #056CF2;
+    height: 20rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Roboto", sans-serif;
+    font-size: 2.5rem;
+}
+.logoGiga{
+    width: 20rem;
+}
+
+.formUser{
+    /* border: 1px solid black; */
+    font-family: 'Poppins';
+    font-size: 1.8rem;
+    text-align: center;
+    padding: 2rem 0;
+    height: 8rem;
+}
+
+.container{
+    /* border: 1px solid black; */
+    /* height: 30rem; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: 100vh;
+}
+
+.card{
+    font-family: 'Poppins';
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    /* border: 1px solid black; */
+    width: 25rem;
+    height: 12rem;
+    margin: 3rem;
+    font-size: 1.8rem;
+}
