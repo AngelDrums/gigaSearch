@@ -14,21 +14,17 @@
 
     <form class="formUser" action="">
         <label for="user">Usuario:</label>
-        <input type="text" id="user" placeholder="Buscar">
-            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#056CF2" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                <path d="M10 10m-7 0a7 7 0 1 0 14 0a7 7 0 1 0 -14 0" />
-                <path d="M21 21l-6 -6" />
-            </svg>
+        <input type="text" id="user" placeholder="Buscar " > 
+        <button class="buttonSearch" id="buttonSearch" ><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#056CF2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+            <path d="M10 10m-7 0a7 7 0 1 0 14 0a7 7 0 1 0 -14 0" />
+            <path d="M21 21l-6 -6" />
+        </svg></button>
+            
     </form>
 
-    <div class="container">
-        <div class="card">
-            <p>Nombre: Moises Quintero</p>
-            <p>Usuario: aguirrequinterogt</p>
-            <p>Pass: GNC</p>
-            <p>Ubicación: San Bernandino</p>
-        </div>
+    <div class="userContainer" id="userContainer">
+       
     </div>
     
     <script src="./js/users.js"></script>

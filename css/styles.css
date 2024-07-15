@@ -33,13 +33,18 @@ html{
     height: 8rem;
 }
 
+.buttonSearch{
+    background-color: white;
+    border: none;
+}
+
 .container{
     /* border: 1px solid black; */
     /* height: 30rem; */
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    height: 100vh;
+    
 }
 
 .card{
