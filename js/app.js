@@ -11,11 +11,12 @@
 
 */
 
-const btnMostrar = document.getElementById("buttonSearch");
+// const btnMostrar = document.getElementById("buttonSearch");
 
 function creardUsuarios(user) {
     const container = document.getElementById("userContainer");
     container.className = "userContainer";
+
 
     const card = document.createElement("div");
     card.className = "card";
@@ -37,10 +38,33 @@ function creardUsuarios(user) {
 }
 
 function mostrarUsuarios(){
-    users.forEach(el => {
-        creardUsuarios(el);
-    });
-}
-;
 
-btnMostrar.onclick = () => mostrarUsuarios();
+
+    const inputUsuario = document.getElementById("user").value;
+    console.log(`El nombre a buscar es: ${inputUsuario}`);
+    // const filterUsers = users.filter((u) => u.name.include(use))
+    const userFilter = users.filter(el => el.nombre.includes(inputUsuario) || el.apellido.includes(inputUsuario) || el.usuario.includes(inputUsuario));
+
+    if (userFilter.length >0) {
+        Swal.fire({
+            title: "Busqueda exitosa!",
+            text: `Se encontró ${userFilter.length} usuarios`,
+            icon: "success"
+          });
+
+          userFilter.forEach(element =>{
+            console.log(element)
+            creardUsuarios(element);
+        });
+    }else{
+        Swal.fire({
+            icon: "error",
+            title: "Oops...",
+            text: "No se encontraron usuarios!",
+          });
+    }
+    
+}
+
+const btnSearch = document.getElementById("search");
+btnSearch.addEventListener("click", mostrarUsuarios);

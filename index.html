@@ -1,27 +1,29 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Giga Search | v1.0</title>
     <link rel="stylesheet" href="./css/styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </head>
 <body>
     <header class="titleSearch">
         <!-- <h1>Giga Search</h1> -->
          <img class="logoGiga" src="./sources/logo-giga.png" alt="Logotipo de GIGA">
+         <h1>V1.0</h1>
     </header>
 
     <form class="formUser" id="formUser" action="">
         <label for="user">Usuario:</label>
         <input type="text" id="user" placeholder="Buscar " > 
-        <button class="buttonSearch" id="buttonSearch" ><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#056CF2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+        <svg id="search" xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#056CF2" fill="none" stroke-linecap="round" stroke-linejoin="round">
             <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
             <path d="M10 10m-7 0a7 7 0 1 0 14 0a7 7 0 1 0 -14 0" />
             <path d="M21 21l-6 -6" />
-        </svg></button>
-            
+        </svg> 
     </form>
+    <!-- <button id="">Mostrar</button> -->
 
     <div class="userContainer" id="userContainer">
        
@@ -30,6 +32,6 @@
     <script src="./js/users.js"></script>
     <script src="./js/app.js"></script>
 
-    <footer class="footer">Derechos reservados</footer>
+
 </body>
 </html>

@@ -15,6 +15,7 @@ html{
     background-color: #056CF2;
     height: 20rem;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     font-family: "Roboto", sans-serif;
@@ -23,6 +24,12 @@ html{
 .logoGiga{
     width: 20rem;
 }
+
+.titleSearch h1{
+    color: white;
+    font-size: 2rem;
+}
+
 
 .formUser{
     /* border: 1px solid black; */
@@ -43,16 +50,13 @@ html{
     /* height: 30rem; */
     display: flex;
     flex-wrap: wrap;
+ 
     justify-content: center;
     
 }
 
 .card{
     font-family: 'Poppins';
-    display: flex;
-    flex-direction: column;
-    /* align-items: center; */
-    /* border: 1px solid black; */
     width: 25rem;
     height: 12rem;
     margin: .5rem;
